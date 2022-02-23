@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>📍MaPin</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""
+		/>
+		<script
+			defer
+			src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin=""
+		></script>
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<h1>📍MaPin</h1>
+		</div>
+		<div class="application">
+			<div class="sidebar">
+				<h1 class="logo">🗺 2022 Map Pins</h1>
+				<ul class="locations">
+					<form class="form hidden">
+						<div class="form__row">
+							<label class="form__label">Type</label>
+							<select class="form__input form__input--type">
+								<option value="vacation">Vacation</option>
+								<option value="business">Business</option>
+							</select>
+						</div>
+						<div class="form__row">
+							<label class="form__label">Total # of Days</label>
+							<input class="form__input form__input--days" placeholder="days" />
+						</div>
+						<div class="form__row form__row--hidden">
+							<label class="form__label">Met with</label>
+							<input class="form__input form__input--company" />
+						</div>
+						<button class="form__btn">OK</button>
+					</form>
+				</ul>
+				<p class="copyright">
+					&copy; Copyright by
+					<a
+						class="github-link"
+						target="_blank"
+						href="https://github.com/MithraPerera"
+						>Mithra Perera</a
+					>.
+				</p>
+			</div>
+			<div id="map"></div>
+		</div>
+	</body>
+</html>
